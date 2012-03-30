@@ -1,0 +1,11 @@
+package wad.huone.database;
+
+public interface DAO<T> {
+    public void create(T instance);
+    public T read(int id);
+    public void delete(T instance);
+    public T update(T instance);
+    public void addHuone(Integer huoneId, Integer henkiloId);
+    public void addHenkilo(Integer henkiloId, Integer huoneId);
+    
+}
